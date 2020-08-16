@@ -1,0 +1,32 @@
+.SideBar {
+    //? Display flex nos permite crear cajas flexibles para que los elementos se acomoden de acuerdo al espacio disponible, existen dos variantes para el flex-flow las cuales son row y column, la primera acomodara nuestros elementos de forma horizontal y la segunda de forma vertical.
+    display: flex;
+    flex-flow: column;
+    //? alignItems nos ayuda a centrar los elementos con respecto al elemento que los contiene en este caso el SideBar.
+    align-items: center;
+
+    height: 100vh;
+    //? El backgroundColor sirve para asignar color a un elemento
+    background-color: #6d84f4;
+
+    img {
+        //? width es el ancho del elemento y su equivalente en altura es heigth
+        width: 4em;
+        //? borderRadius permite asignar border redondeados a las cajas que creamos. si se asigna el 50% significa que se convertira en un circulo
+        border-radius: 50%;
+        margin-top: 1em;
+    }
+
+    ul {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 2em;
+
+        li {
+            font-size: 2rem;
+            margin-top: 1em;
+            color: white;
+        }
+    }
+}

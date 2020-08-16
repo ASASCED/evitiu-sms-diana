@@ -1,0 +1,36 @@
+.Card {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+
+    img {
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+    }
+
+    .info {
+        margin-left: 0.5em;
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        label {
+            display: block;
+            color: rgb(129, 129, 129);
+            font-size: 0.9rem;
+            margin: 0.5em 0;
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: rgb(165, 165, 165);
+        }
+    }
+}

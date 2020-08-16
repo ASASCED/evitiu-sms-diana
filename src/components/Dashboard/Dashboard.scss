@@ -1,0 +1,17 @@
+.Dashboard {
+    //? Permite que ingresemos un sistema de grillas el cual podra ser definido por columnas, filas o ambas en caso de ser necesario por lo que simplemente se deberan de definit con 'grid-template-{columns/rows}'
+    display: grid;
+    //! Las columnas y las filas pueden ser definidas por cualquier medida, las mas recomendables son em y el fr
+    //? fr: Es el equivalente al espacio restante de la pantalla, css se encarga de hacer el calculo
+    grid-template-columns: 6em 20em 1fr 25em;
+
+    //? vh: Es la definicion que se le da al 100% del espacio disponible en pantalla a lo largo, tambien tiene su equivalente en ancho que seria vw (view width)
+    height: 100vh;
+
+    .components {
+        //! La propiedad border puede ser usada individualmente declarando border-left, rigth, top o botton y son equivalentes a izquierda derecha arriba y abajo. Tambien puede ser declarado de la siguiente forma.
+        //* border: 1em 2em 1em 2em; Equivalen al orden del reloj lo cual seria arriba-derecha-abajo-izquierda. Lo mismo aplica para el padding.
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+}

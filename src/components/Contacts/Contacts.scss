@@ -1,0 +1,39 @@
+.Contacts {
+    display: grid;
+    //? En este caso estamos ocupando lo que es el sistema de grillas con una definicion de filas con las medidas de 4em 3em y 1fr respectivamente. Es recomentable que cuando se use el sistema de grillas el elemento contenedor en este caso Contacts tenga una medida definida como 10em, 400px, 15cm, etc. en este caso se uso el 100vh para obtener todo el alto de la pantalla.
+    grid-template-rows: 4em 3em 1fr;
+    height: 100vh;
+    padding: 0 1em;
+
+    input {
+        border-radius: 0.5em;
+        background-color: rgb(235, 235, 235);
+        padding: 0.8em 1.2em;
+        margin: 1em 0;
+    }
+
+    .buttons {
+        display: flex;
+        flex-flow: row;
+        //? space-beetween solamente puede ser usado por justify-content y sirve para asignar un espacio entre los elementos del componente si es que hay espacio sobrante.
+        justify-content: space-between;
+
+        width: 100%;
+        margin-top: 1em;
+
+        button {
+            width: 48%;
+            background-color: #79d6f7;
+            padding: 0.5em 0;
+            text-align: center;
+            border-radius: 0.5em;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-flow: column;
+        margin-top: 1em;
+        overflow-y: scroll;
+    }
+}
